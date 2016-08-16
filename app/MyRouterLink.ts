@@ -1,5 +1,5 @@
 
-import {Component, ViewContainerRef, ComponentResolver,
+import {Component, ViewContainerRef, Compiler,
   ComponentRef, ComponentFactory, ViewChild, ComponentMetadata} from '@angular/core';
 import { ROUTER_DIRECTIVES} from '@angular/router';
 import {DataServices} from './DataServices';
@@ -15,7 +15,7 @@ export class MyRouterLink {
   @ViewChild('mymenu', { read: ViewContainerRef }) target: ViewContainerRef;
   private cmpRef: ComponentRef<any>;
 
-  constructor(private dataServices: DataServices, private resolver: ComponentResolver, private _viewContainerRef: ViewContainerRef) { }
+  constructor(private dataServices: DataServices, private compiler: Compiler, private _viewContainerRef: ViewContainerRef) { }
 
   ngAfterViewInit() {
     if (this.cmpRef) {
@@ -35,6 +35,7 @@ export class MyRouterLink {
   ngOnDestroy() {
     if (this.cmpRef) {
       this.cmpRef.destroy();
+      this.cmpRef = null;
     }
   }
 
@@ -44,6 +45,6 @@ export class MyRouterLink {
       directives: ROUTER_DIRECTIVES
     });
     let decoratedCmp = Component(metadata)(class DynamicComponent { });
-    return this.resolver.resolveComponent(decoratedCmp);
+    return this.compiler.compileComponentAsync(decoratedCmp);
   }
 }
