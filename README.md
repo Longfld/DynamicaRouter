@@ -17,4 +17,3 @@ http://plnkr.co/edit/18CZVF?p=preview
 
 
 
-This works with firefox: plnkr.co/edit/yINxG1?p=preview
