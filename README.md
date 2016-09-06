@@ -16,13 +16,13 @@ http://plnkr.co/edit/1fdAYP5PAbiHdJfTKgWo?p=preview
 For rc5 :http://plnkr.co/edit/nm5m7N?p=preview
 
 
-You can see how to in abgular 2:
+You can see  angular 2, how to:
 
-1. Dynamical components (app/MyRouterLinks.ts)
+1. Dynamic load components (app/MyRouterLinks.ts)
 
 2. Routes Lazy loading (app/app.routing.ts)
 
-3. http with rxjs/observable 
+3. http with rxjs/observable (app/DataServices and more)
 
 
 
