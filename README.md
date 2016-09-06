@@ -1,5 +1,5 @@
 # DynamicalRouter
-ng2 Router with dynamical load menu and screen
+ng2 Router with dynamica loaded menu and lazy loaded screen
 
 ng rc6
 
@@ -10,7 +10,7 @@ npm install
 
 npm start
 
- http://plnkr.co/edit/1fdAYP5PAbiHdJfTKgWo?p=preview
+http://plnkr.co/edit/1fdAYP5PAbiHdJfTKgWo?p=preview
  
  
 For rc5 :http://plnkr.co/edit/nm5m7N?p=preview
