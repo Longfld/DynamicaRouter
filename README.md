@@ -17,8 +17,11 @@ For rc5 :http://plnkr.co/edit/nm5m7N?p=preview
 
 
 You can see how to in abgular 2:
+
 1. Dynamical components (app/MyRouterLinks.ts)
+
 2. Routes Lazy loading (app/app.routing.ts)
+
 3. http with rxjs/observable 
 
 
