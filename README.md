@@ -22,7 +22,7 @@ You can see  angular 2, how to:
 
 2. Routes Lazy loading (app/app.routing.ts)
 
-3. http with rxjs/observable (app/DataServices and more)
+3. http with rxjs/observable (app/DataServices.ts and more)
 
 
 
