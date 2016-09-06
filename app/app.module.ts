@@ -4,11 +4,12 @@ import { HttpModule, JsonpModule } from '@angular/http';
 
 import { AppComponent }  from './app.component';
 import { routing }        from './app.routing';
+import { MyRouterLink} from './MyRouterLink';
 
 
 @NgModule({
   imports:      [ BrowserModule,HttpModule,JsonpModule, routing ],
-  declarations: [ AppComponent ],
+  declarations: [ AppComponent,MyRouterLink ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
