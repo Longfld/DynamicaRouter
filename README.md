@@ -12,9 +12,6 @@ npm start
 
 http://plnkr.co/edit/1fdAYP5PAbiHdJfTKgWo?p=preview
  
- 
-For rc5 :http://plnkr.co/edit/nm5m7N?p=preview
-
 
 You can see  angular 2, how to:
 
