@@ -1,7 +1,7 @@
 # DynamicalRouter
 ng2 Router with dynamica loaded menu and lazy loaded screen
 
-ng rc7
+Angular 2.0 Final Release
 
 How to run?
 After download, go to folder
