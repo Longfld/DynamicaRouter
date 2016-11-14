@@ -1,4 +1,4 @@
-function (global) {
+(function (global) {
   System.config({
     paths: {
       // paths serve as alias
