@@ -1,4 +1,4 @@
-(function (global) {
+function (global) {
   System.config({
     paths: {
       // paths serve as alias
@@ -26,6 +26,9 @@
       '@angular/http/testing': 'npm:@angular/http/bundles/http-testing.umd.js',
       '@angular/router/testing': 'npm:@angular/router/bundles/router-testing.umd.js',
       '@angular/forms/testing': 'npm:@angular/forms/bundles/forms-testing.umd.js',
+
+      '@angular/material': 'npm:@angular/material/material.umd.js',
+
       // other libraries
       'rxjs':                       'npm:rxjs',
       'angular2-in-memory-web-api': 'npm:angular2-in-memory-web-api',
