@@ -30,8 +30,8 @@
       '@angular/material': 'npm:@angular/material/material.umd.js',
 
       // other libraries
-      'rxjs':                       'npm:rxjs',
-      'angular2-in-memory-web-api': 'npm:angular2-in-memory-web-api',
+      'rxjs':                       'npm:rxjs'
+      
     },
     // packages tells the System loader how to load when no filename and/or no extension
     packages: {
@@ -40,10 +40,6 @@
         defaultExtension: 'js'
       },
       rxjs: {
-        defaultExtension: 'js'
-      },
-      'angular2-in-memory-web-api': {
-        main: './index.js',
         defaultExtension: 'js'
       }
     }
