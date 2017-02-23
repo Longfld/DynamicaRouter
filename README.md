@@ -20,8 +20,9 @@ You can see  angular 2, how to:
 
 3. http with rxjs/observable (app/DataServices.ts and more)
 
+Want more discuss? http://stackoverflow.com/questions/38888008/how-can-i-use-create-dynamic-template-to-compile-dynamic-component-with-angular/39341663#39341663
 
-Upgrade to angular 2.1.2, see:  http://plnkr.co/edit/DUH6ZI?p=preview
+For angular 2.1.2, see:  http://plnkr.co/edit/DUH6ZI?p=preview
 
 
 
