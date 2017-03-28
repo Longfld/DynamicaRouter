@@ -1,7 +1,7 @@
 # DynamicalRouter
-ng2 Router with dynamica loaded menu and lazy loaded screen
+Angular Router with dynamica loaded menu and lazy loaded screen
 
-Angular 2.4 version
+Angular 4.0 version
 
 How to run?
 After download, go to folder
@@ -12,7 +12,7 @@ npm start
 
 http://plnkr.co/edit/1fdAYP5PAbiHdJfTKgWo?p=preview
  
-You can see  angular 2, how to:
+You can see  angular, how to:
 
 1. Dynamic load components (app/MyRouterLinks.ts)
 
