@@ -27,6 +27,10 @@
       '@angular/router/testing': 'npm:@angular/router/bundles/router-testing.umd.js',
       '@angular/forms/testing': 'npm:@angular/forms/bundles/forms-testing.umd.js',
 
+      '@angular/animations': 'node_modules/@angular/animations/bundles/animations.umd.min.js',
+      '@angular/animations/browser':'node_modules/@angular/animations/bundles/animations-browser.umd.js',
+      '@angular/platform-browser/animations': 'node_modules/@angular/platform-browser/bundles/platform-browser-animations.umd.js',
+
       '@angular/material': 'npm:@angular/material/material.umd.js',
 
       // other libraries
@@ -41,7 +45,11 @@
       },
       rxjs: {
         defaultExtension: 'js'
-      }
+      },
+       hammerjs:  { 
+                main: './hammer.js', 
+                defaultExtension: 'js'
+              }
     }
   });
 })(this);
