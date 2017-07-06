@@ -23,12 +23,11 @@ export class MyRouterLink {
       this.cmpRef.destroy();
     }
     this.dataServices.GetMenuLinks()
-      .subscribe(returnedmenu =>
-        (
-          (this.compileToComponent(returnedmenu)).then((factory: ComponentFactory<any>) => {
+      .subscribe(returnedmenu =>{
+          (this.compileToComponent(returnedmenu.data)).then((factory: ComponentFactory<any>) => {
             this.cmpRef = this.target.createComponent(factory)
           })
-        ),
+    },
       error => console.log(<any>error)
       );
   }
