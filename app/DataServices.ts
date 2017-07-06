@@ -12,7 +12,7 @@ export class DataServices {
   
   GetMenuLinks() {
     return this.http.get(this.menusUrl)
-                    .map(this.extractData)
+                    .map(res => res.json())
                     .catch(this.handleError);
   }
 
