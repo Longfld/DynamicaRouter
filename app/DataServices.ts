@@ -7,31 +7,15 @@ import { Observable }     from 'rxjs/Observable';
 @Injectable()
 export class DataServices {
   constructor (private http: Http) {}
-
-  private menusUrl = 'app/menu.json';  // URL to web API
-  private screensUrl = 'app/screens.json';  // URL to web API
-
-  GetMenuLinks(): Observable<string> {
+  
+  private menusUrl = 'app/menu.json'; 
+  
+  GetMenuLinks() {
     return this.http.get(this.menusUrl)
                     .map(this.extractData)
                     .catch(this.handleError);
   }
-  GetScreens() : Observable<string[]>{
-    return this.http.get(this.screensUrl)
-    .map(this.extractArray)
-    .catch(this.handleError);
-  }
- 
-  private extractData(res: Response) :string {
-    let body = res.json();
-    return  <string>body.data || "";
-  }
 
-  private extractArray(res: Response) :string[] {
-    let body = res.json();
-    return  <string[]>body.data.stringify() || null;
-  }
-  
   private handleError (error: any) {
     // In a real world app, we might use a remote logging infrastructure
     // We'd also dig deeper into the error to get a better message
