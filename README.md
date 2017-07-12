@@ -24,7 +24,7 @@ Want more discuss? http://stackoverflow.com/questions/38888008/how-can-i-use-cre
 
 For angular 2.1.2, see:  http://plnkr.co/edit/DUH6ZI?p=preview
 
-For this app run under Electron see :https://github.com/Longfld/Angular4RouterInElectron
+For this app run under Electron see :https://github.com/Longfld/AngularRouter4Electron
 
 
 
