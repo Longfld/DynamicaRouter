@@ -24,7 +24,9 @@ Want more discuss? http://stackoverflow.com/questions/38888008/how-can-i-use-cre
 
 For angular 2.1.2, see:  http://plnkr.co/edit/DUH6ZI?p=preview
 
-For this app run under Electron see :https://github.com/Longfld/AngularRouter4Electron
+For this app run under Elmulti-level drop down menu from here: ectron see :https://github.com/Longfld/AngularRouter4Electron
+
+Check multi-level drop down menu from here: https://github.com/Longfld/DynamicaLoadMultiLevelDropDownMenu
 
 
 
