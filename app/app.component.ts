@@ -1,7 +1,4 @@
 import { Component } from '@angular/core';
-import './rxjs-operators';
-
-//import { MyRouterLink} from './MyRouterLink';
 
 @Component({
   selector: 'my-app',
