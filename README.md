@@ -1,7 +1,5 @@
 # DynamicaRouter
-Angular Router with dynamica loaded menu and lazy loaded screen
-
-Angular 4.0 version
+Angular Router with dynamica loaded menu and lazy loaded screen  systemjs
 
 How to run?
 After download, go to folder
