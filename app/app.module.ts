@@ -1,6 +1,6 @@
 import { NgModule }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { HttpModule, JsonpModule } from '@angular/http';
+import { HttpClientModule } from '@angular/common/http';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 import { MyMaterialModule} from './my.material.module'
@@ -10,7 +10,7 @@ import { MyRouterLink} from './MyRouterLink';
 
 
 @NgModule({
-  imports:      [ BrowserModule,BrowserAnimationsModule,HttpModule,JsonpModule, MyMaterialModule, routing ],
+  imports:      [ BrowserModule,BrowserAnimationsModule,HttpClientModule, MyMaterialModule, routing ],
   declarations: [ AppComponent,MyRouterLink ],
   bootstrap:    [ AppComponent ]
 })
