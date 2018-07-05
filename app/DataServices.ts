@@ -1,27 +1,26 @@
-import { Injectable }     from '@angular/core';
-import { Http, Response } from '@angular/http';
-import { Headers, RequestOptions } from '@angular/http';
+import { Injectable } from '@angular/core';
+import { HttpClient, HttpHeaders } from "@angular/common/http";
 
-import { Observable }     from 'rxjs/Observable';
+
+import { Observable, of } from 'rxjs';
+import { catchError } from 'rxjs/operators'
 
 @Injectable()
 export class DataServices {
-  constructor (private http: Http) {}
-  
-  private menusUrl = 'app/menu.json'; 
-  
+  constructor(private http: HttpClient) { }
+
+  private menusUrl = 'app/menu.json';
+
   GetMenuLinks() {
-    return this.http.get(this.menusUrl)
-                    .map(res => res.json())
-                    .catch(this.handleError);
+    return this.http.get<any>(this.menusUrl).pipe(
+      catchError(this.handleError("login"))
+    );
   }
 
-  private handleError (error: any) {
-    // In a real world app, we might use a remote logging infrastructure
-    // We'd also dig deeper into the error to get a better message
-    let errMsg = (error.message) ? error.message :
-      error.status ? `${error.status} - ${error.statusText}` : 'Server error';
-    console.error(errMsg); // log to console instead
-    return Observable.throw(errMsg);
+  private handleError<T>(operation = 'operation', result?: T) {
+    return (error: any): Observable<T> => {
+      console.error(`${operation} error: ${error.message}`);
+      return of(result as T);
+    };
   }
 }
