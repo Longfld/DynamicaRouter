@@ -28,8 +28,7 @@
     "rxjs-system-bundle": "6.0.0",
     "systemjs": "0.21.4",
     "typescript": "2.7.2",
-    "zone.js": "0.8.26",
-    "bootstrap": "3.3.6"
+    "zone.js": "0.8.26"
   },
   "devDependencies": {
     "concurrently": "3.2.0",
